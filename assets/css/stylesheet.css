@@ -1,0 +1,88 @@
+    	img{visibility: hidden;}
+    	h3 {visibility: hidden;}
+    	
+    	.cDivar{
+  			text-align: center;
+  			height: 100px;
+  			margin-top: 5%;
+  		}
+  		
+    	#pil1, #pil2 {
+    		opacity: .6;
+    	}
+    	
+    	.bildUhover{
+    		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+    	}
+
+    	#treBilder, #bild6{
+    		margin-top: 120px;
+    		text-align: center;
+    	}
+    	
+    	.bilder{
+    		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+    		margin: 15%;
+    		transition: width 1s, margin 1s;
+    	}
+    	
+    	.bilder:hover{
+    		width: 120%;
+    		margin: 0%;
+    	}
+    	
+    	.slideDown{
+    		animation-name: komframPil;
+    		animation-duration: 1s;
+    		visibility: visible;
+    	}
+    	@keyframes komframPil {
+   	 	0% {opacity: 0; transform: translateY(-20%);} 
+    	100% {opacity: 0.6; transform: translateY(0%);}
+    	}
+    	
+    	.slideUp{
+    		animation-name: komfram;
+    		animation-duration: 1s;
+    		visibility: visible;
+    	}
+    	@keyframes komfram {
+   	 	0% {opacity: 0; transform: translateY(10%);} 
+    	100% {opacity: 1; transform: translateY(0%);}
+		}
+		
+		.slideRight{
+    		visibility: visible;
+    		animation-name: komframHöger;
+    		animation-duration: 1s;
+    	}
+    	@keyframes komframHöger{
+    		0% {opacity: 0; transform: translateX(-20%);}
+    		100%{opacity: 1; transform: translateX(0%);}
+    	}
+    	
+    	.slideLeft{
+    		visibility: visible;
+    		animation-name: komframVänster;
+    		animation-duration: 1s;
+    	}
+    	@keyframes komframVänster{
+    		0% {opacity: 0; transform: translateX(20%);}
+    		100%{opacity: 1; transform: translateX(0%);}
+    	}
+    
+    	.slideUpText{
+    		visibility: visible;
+    		animation-name: textKomFram;
+    		animation-duration: 1s;
+    	}
+    	@keyframes textKomFram{
+    		0%{opacity: 0; transform: translateY(20%);}
+    		100%{opacity: 1; transform: translateY(0%);}
+    	}
+    	
+    	

@@ -1,0 +1,16 @@
+.center{
+  			text-align: center;
+  			margin-top: 10px;
+  		}
+#box {
+    width: 30%;
+    height: 30vh;
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.ham {
+    position: absolute;
+    left: 20px;
+}

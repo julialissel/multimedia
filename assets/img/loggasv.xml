@@ -1,0 +1,46 @@
+                    <!-- Här är svg-kod med vår logga -->   
+                    <svg  width="200" height="200"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                        <defs>
+                            <path id="kurva1" d="M 49 75 q 50 -60 105 0" fill="none"/>
+                            <path id="kurva2" d="M 55 150 q 40 30 90 0" fill="none"/>
+                        </defs>
+
+                        <g id="logga">
+                            <circle cx="100" cy="100" r="75" stroke="black" stroke-width="4" fill="none">
+                            </circle>
+                            <text fill="black" font-family="tahoma" >
+                                <textPath xlink:href="#kurva1">
+                                    W E R M L A N D
+                                </textPath>
+                            </text>
+
+                            <text fill="black" font-family="tahoma">
+                                <textPath xlink:href="#kurva2">
+                                    F O R E V E R
+                                </textPath>
+                            </text>
+                            <!-- Linjer i mitten av loggan-->
+                            <line x1="63" y1="80" x2="83" y2="95" stroke="black" stroke-width="2"></line>
+                            <line x1="118" y1="117" x2="138" y2="133" stroke="black" stroke-width="2"></line>
+
+                            <line x1="63" y1="133" x2="83" y2="117" stroke="black" stroke-width="2"></line>
+                            <line x1="118" y1="95" x2="138" y2="80" stroke="black" stroke-width="2"></line>
+                            <text x="85" y="111" fill="black" font-family="tahoma" font-size="14" >2017</text>
+						
+						<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 100 100" to="360 100 100" dur="3s" 
+						repeatCount="1" begin="logga.click" />
+						
+                        </g>
+
+    
+                     <!--
+                    Källor:
+                     https://www.w3schools.com/graphics/svg_text.asp
+                     https://www.w3schools.com/graphics/svg_line.asp
+                     https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textPath 
+                     https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text               
+					 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform
+                    -->                     
+                    </svg> 
+                    <!-- Logga slut-->
+<!-- loggan har endast vita färger så den kommer inte synas om endast denna fil körs. Men den ska vara helvit. -->
